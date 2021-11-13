@@ -68,6 +68,7 @@ body {
 
 .box .logonav {
 	padding: 20px 40px;
+	color: white;
 	font-size: 30px;
 	text-decoration: none;
 	font-family: 'RaleWay', sans-serif;
@@ -285,6 +286,186 @@ span {
 	padding: 30px 10px;
 }
 
+/*tring transform card*/
+
+.special {
+	width: 45%;
+	height: 600px;
+	position: relative;
+	top: 60px;
+}
+
+.specialcont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 2px solid #737373;
+}
+
+.specard {
+	width: 500px;
+	height: 600px;
+	background-color: rgb(206, 206, 206);
+	border-radius: 10px;
+	color: black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+.specard img {
+	width: 340px;
+	height: 170px;
+}
+
+.titlespe {
+	background-color: #757575;
+	padding: 16px 32px;
+	width: 100px;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+}
+
+.specard p {
+	width: 100%;
+	padding: 10px 50px;
+	font-size: 20px;
+	width: 450px;
+	height: 150px;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+	text-align: right;	
+}
+
+.alone {
+	width: 500px;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.alone h5 {
+	padding: 20px 40px;
+	font-size: 26px;
+	color: white;
+	background-color: #818181;
+	border-radius: 10px;
+}
+
+.alone a {
+	padding: 16px 32px;
+	color: white;
+	background-color: #818181;
+	border-radius: 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.alone a:hover {
+	background-color: #bfbfbf;
+	color: black;
+	text-decoration: underline;
+}
+
+.alone a:active {
+	background-color: #333;
+	color: white;
+}
+
+.cardcont {
+	width: 100%;
+	height: 1100px;
+	display: flex;
+	background-color: rgb(8, 8, 8);
+}
+
+.transformcard {
+	height: 900px;
+	width: 55%;
+	display: flex;
+	justify-content: space-around;
+	align-items: space-around;
+	flex-wrap: wrap;
+	position: relative;
+	top: 60px;
+}
+
+.trcard {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 320px;
+	height: 400px;
+	background-color: rgb(83, 83, 83);
+	border-radius: 10px;
+	transition: 0.4s ease-out;
+	color: rgb(211, 211, 211);
+}
+
+.alonetr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.trcard:hover {
+	transform: scale(1.06);
+}
+
+.titlecard {
+	width: auto;
+	height: 30px;
+	color: white;
+	background-color: #292929;
+  	font-weight: 300;
+	padding: 10px 40px;
+	margin-bottom: -10px;
+	margin-top: 25px;
+}
+
+.trcard p {
+	color: rgb(212, 212, 212);
+  	font-weight: 300;
+	padding: 6px 12px;
+	border-bottom: 1px solid black;
+}
+
+.trcard a {
+	padding: 8px 16px;
+	background-color: #1a1a1a;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-left: 40px;
+}
+
+.trcard a:hover {
+	background-color: #333;
+	color: white;
+	text-decoration: underline;
+}
+
+.trcard h5 {
+	padding: 8px 16px;
+	border-radius: 5px;
+	background-color: #1a1a1a;
+	color: white;
+	font-size: 24px;
+}
+
+.trcard img {
+	width: 250px;
+	height: 130px;
+	bottom: 80px;
+	left: 30px;
+}
+
+
 .reputation {
 	width: 100%;
 	height: 500px;
@@ -414,6 +595,10 @@ span {
 	transition: 0.2s ease;
 	border-radius: 5px;
 	box-shadow: 0 4px 4px 0 white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 }
 
 .propara {
@@ -448,7 +633,7 @@ span {
 	border-radius: 10px;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 1);
 	text-decoration: none;
-	
+	margin-bottom: 30px;
 }
 
 .probtn a {
@@ -565,54 +750,114 @@ footer {
 	border-top: 1px solid grey;
 	background-color: #1a1a1a;
 	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
+.footicons {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
-footer a {
+.footicons a {
+	padding: 15px;
+	font-size: 48px;
 	color: white;
-	position: relative;
-	text-align: center;
-	padding-left: 20px;
-	margin: 10px 0;
+	text-decoration: none;
+}
+
+.footicons .fa-youtube {
+	background-color: #bb0000;
+}
+
+.footicons .fa-youtube:hover {
+	opacity: 0.8;
+}
+
+.footicons .fa-telegram {
+	background-color: #55ACEE;
+}
+
+.footicons .fa-telegram:hover {
+	opacity: 0.8;
+}
+
+.footicons .fa-whatsapp {
+	background-color: #04AA6D;
+}
+
+.footicons .fa-whatsapp:hover {
+	opacity: 0.8;
+}
+
+.footicons .fa-instagram {
+	background-color: #125688;
+}
+
+.footicons .fa-instagram:hover {
+	opacity: 0.8;
 }
 
 .foottext {
-	height: 40px;
-
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-a:visited {
+.foottext p {
+	font-size: 20px;
+	text-decoration: none;
 	color: white;
+	width: 300px;
+}
+
+.foottext a:visited {
 	text-decoration: none;
-	
+	columns: white;
 }
 
-.foottext, .foottext a {
-	padding: 20px 20;
-	font-size: 18px;
-	color: ghostwhite;
-	font-weight: 300;
-	letter-spacing: 0.1em;
-	margin-left: 40px;
-	border-top: 1px solid white;
-	width: 250px;
-	text-decoration: none;
-	cursor: pointer;
-}
 
-.foottext:hover {
-	text-decoration: underline;
-}
 
-.footicons i:hover {
-	opacity: 0.7;
-}
 
-.footicons i:active {
-	opacity: 1;
-}
+
+
 
 /*Now below section is for responsive*/
+
+@media only screen and (max-width: 768px) {
+	.special {
+		width: 100%;
+		height: 600px;
+	}
+
+	.cardcont {
+		height: 1600px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.transformcard {
+		top: 100px;
+		height: 1400px;
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 480px 480px;
+		display: grid;
+		margin-left: 20px;
+		
+	}
+
+	.overley {
+		visibility: hidden;
+	}
+}
 
 @media screen and (max-width:480px), (max-width: 600px) {
 
@@ -680,7 +925,7 @@ a:visited {
 	.about {
 		display: flex;
 		width: 100%;
-		height: 1800px;
+		height: 1000px;
 		justify-content: center;
 		align-items: center;
 		margin-top: 20px;
@@ -698,7 +943,14 @@ a:visited {
 		width: 100%;
 		margin-bottom: 25px;
 		font-size: 20px;
-		
+	}
+
+	.abouttxt {
+		font-size: 16px;
+	}
+
+	.persian {
+		font-size: 16px;
 	}
 
 	.logo {
@@ -805,116 +1057,53 @@ a:visited {
 		left: 40px;
 	}
 
+	.special {
+		width: 100%;
+		height: 1000px;
+	}
+
+	.cardcont {
+		width: 100%;
+		height: 3000px;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.transformcard {
-		visibility: hidden;
+		width: 100%;
+		height: 2000px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 
-	.transformcards {
-		visibility: visible;
+	.trcard:hover  {
+		transform: none;
 	}
 
-	
+	.special {
+		width: 100%;
+		height: 700px;
+	}
+
+	.specard {
+		width: 400px;
+		height: 500px;
+	}
+
+	.specard img {
+		width: 272px;
+		height: 142px;
+	}
+
+	.specard p {
+		font-size: 17px;
+	}
+
+	.alone {
+		width: 400px;
+	}
 }
 
-/*tring transform card*/
-.cardcont {
-	width: 100%;
-	height: 700px;
-}
 
-.transformcard {
-	height: 600px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 60px;
-	left: calc(50%-400px);
-}
-
-.trcard {
-	display: flex;
-	width: 300px;
-	height: 380px;
-	background-color: rgb(233, 233, 233);
-	border-radius: 10px;
-	box-shadow: -1rem 0 3rem #000;
-	transition: 0.4s ease-out;
-	position: relative;
-	left: 0;
-	color: black;
-}
-
-.trcard:not(:first-child) {
-	margin-left: -50px;
-}
-
-.trcard:hover {
-	transform: translateY(-30px) translateX(30px);
-	transition: 0.4s ease-out;
-	z-index: 1;
-}
-
-.trcard:hover ~ .card {
-	position: relative;
-	left: 50px;
-	transition: 0.4s ease-out;
-}
-
-.titlecard {
-	width: auto;
-	height: 30px;
-	color: black;
-	background-color: #737373;
-  	font-weight: 300;
-  	position: absolute;
-  	left: 20px;
-  	top: 15px;
-	padding: 10px 40px;
-}
-
-.trcard p {
-	color: black;
-  	font-weight: 300;
-  	position: absolute;
-  	left: 20px;
-  	top: 80px;
-	padding: 6px 10px;
-	border-bottom: 1px solid black;
-}
-
-.trcard a {
-	position: absolute;
-	bottom: 20px;
-	right: 30px;
-	padding: 8px 16px;
-	background-color: #1a1a1a;
-	color: white;
-	text-decoration: none;
-	border-radius: 5px;
-}
-
-.trcard a:hover {
-	background-color: #333;
-	color: white;
-	text-decoration: underline;
-}
-
-.trcard h5 {
-	position: absolute;
-	bottom: 20px;
-	left: 30px;
-	padding: 8px 16px;
-	border-radius: 5px;
-	background-color: #1a1a1a;
-	color: white;
-	font-size: 24px;
-}
-
-.trcard img {
-	width: 250px;
-	height: 130px;
-	position: absolute;
-	bottom: 80px;
-	left: 30px;
-}
