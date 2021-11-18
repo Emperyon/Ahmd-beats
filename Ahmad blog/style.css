@@ -31,6 +31,7 @@ body {
 .center h1 {
 	font-size: 48px;
 	letter-spacing: 3px;
+	font-weight: 500;
 }
 
 .center p {
@@ -299,33 +300,27 @@ span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-right: 2px solid #737373;
+	
 }
 
 .specard {
 	width: 500px;
-	height: 600px;
-	background-color: rgb(206, 206, 206);
+	height: 770px;
+	background-color: black;
+	border: 3px solid white;
+	box-shadow: 0 8px 16px 0 white;
 	border-radius: 10px;
-	color: black;
+	color: white;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
 }
 
 .specard img {
-	width: 340px;
-	height: 170px;
-}
-
-.titlespe {
-	background-color: #757575;
-	padding: 16px 32px;
-	width: 100px;
-	font-size: 32px;
-	color: white;
-	text-align: center;
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0 0;
 }
 
 .specard p {
@@ -345,6 +340,7 @@ span {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .alone h5 {
@@ -358,16 +354,19 @@ span {
 .alone a {
 	padding: 16px 32px;
 	color: white;
-	background-color: #818181;
+	background-color: #333;
 	border-radius: 10px;
 	font-size: 20px;
 	text-decoration: none;
+	transition: 0.2s ease;
 }
 
 .alone a:hover {
-	background-color: #bfbfbf;
+	background-color: white;
+	box-shadow: 0 0 26px 0 white;
 	color: black;
 	text-decoration: underline;
+
 }
 
 .alone a:active {
@@ -377,13 +376,15 @@ span {
 
 .cardcont {
 	width: 100%;
-	height: 1100px;
+	height: 1200px;
 	display: flex;
 	background-color: rgb(8, 8, 8);
 }
 
+
+
 .transformcard {
-	height: 900px;
+	height: 1100px;
 	width: 55%;
 	display: flex;
 	justify-content: space-around;
@@ -391,6 +392,7 @@ span {
 	flex-wrap: wrap;
 	position: relative;
 	top: 60px;
+	border-left: 2px solid #737373;
 }
 
 .trcard {
@@ -398,9 +400,11 @@ span {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	width: 320px;
-	height: 400px;
-	background-color: rgb(83, 83, 83);
+	width: 280px;
+	height: 460px;
+	background-color: black;
+	border: 3px solid white;
+	box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.7);
 	border-radius: 10px;
 	transition: 0.4s ease-out;
 	color: rgb(211, 211, 211);
@@ -408,24 +412,14 @@ span {
 
 .alonetr {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	margin-bottom: 25px;
 }
 
 .trcard:hover {
 	transform: scale(1.06);
-}
-
-.titlecard {
-	width: auto;
-	height: 30px;
-	color: white;
-	background-color: #292929;
-  	font-weight: 300;
-	padding: 10px 40px;
-	margin-bottom: -10px;
-	margin-top: 25px;
+	box-shadow: 0 12px 24px 0 white;
 }
 
 .trcard p {
@@ -441,12 +435,14 @@ span {
 	color: white;
 	text-decoration: none;
 	border-radius: 5px;
-	margin-left: 40px;
+	margin-left: 20px;
+	transition: .2s ease;
 }
 
 .trcard a:hover {
-	background-color: #333;
-	color: white;
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 26px 0 white;
 	text-decoration: underline;
 }
 
@@ -459,10 +455,9 @@ span {
 }
 
 .trcard img {
-	width: 250px;
-	height: 130px;
-	bottom: 80px;
-	left: 30px;
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0 0;
 }
 
 
@@ -786,14 +781,6 @@ footer {
 	opacity: 0.8;
 }
 
-.footicons .fa-whatsapp {
-	background-color: #04AA6D;
-}
-
-.footicons .fa-whatsapp:hover {
-	opacity: 0.8;
-}
-
 .footicons .fa-instagram {
 	background-color: #125688;
 }
@@ -822,22 +809,16 @@ footer {
 	columns: white;
 }
 
-
-
-
-
-
-
 /*Now below section is for responsive*/
 
 @media only screen and (max-width: 768px) {
 	.special {
 		width: 100%;
-		height: 600px;
+		height: 1000px;
 	}
 
 	.cardcont {
-		height: 1600px;
+		height: 2000px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -859,7 +840,7 @@ footer {
 	}
 }
 
-@media screen and (max-width:480px), (max-width: 600px) {
+@media screen and (max-width:420px), (max-width: 600px) {
 
 	.container {
 		position: relative;
@@ -1089,12 +1070,12 @@ footer {
 
 	.specard {
 		width: 400px;
-		height: 500px;
+		height: 600px;
 	}
 
 	.specard img {
-		width: 272px;
-		height: 142px;
+		width: 100%;
+		height: auto;
 	}
 
 	.specard p {
@@ -1103,6 +1084,35 @@ footer {
 
 	.alone {
 		width: 400px;
+	}
+
+	footer {
+		position: relative;
+		bottom: 100px;
+		justify-content: space-between;
+	}
+
+	.footicons a {
+		font-size: 20px;
+	}
+
+	.footicons {
+		justify-content: center;
+		width: 50%;
+	}
+
+	.foottext {
+		width: 50%;
+	}
+
+	.foottext p {
+		font-size: 14px;
+		width: 200px;
+		text-align: right;
+	}
+
+	#contact {
+		height: 600px;
 	}
 }
 
