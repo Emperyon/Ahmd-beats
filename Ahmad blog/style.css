@@ -10,9 +10,10 @@ body {
 
 .container {
 	position: relative;
+	top: 0;
 	width: 100%;
 	height: 1200px;
-	background-image: url('face 2.jpg');
+	background: url("facee.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -308,7 +309,7 @@ span {
 	height: 770px;
 	background-color: black;
 	border: 3px solid white;
-	box-shadow: 0 8px 16px 0 white;
+	box-shadow: 4px 1px 19px 6px rgba(192, 24, 207, 0.637);
 	border-radius: 10px;
 	color: white;
 	display: flex;
@@ -327,7 +328,6 @@ span {
 	width: 100%;
 	padding: 10px 50px;
 	font-size: 20px;
-	width: 450px;
 	height: 150px;
 	box-sizing: border-box;
 	border-bottom: 1px solid black;
@@ -344,11 +344,7 @@ span {
 }
 
 .alone h5 {
-	padding: 20px 40px;
 	font-size: 26px;
-	color: white;
-	background-color: #818181;
-	border-radius: 10px;
 }
 
 .alone a {
@@ -404,10 +400,54 @@ span {
 	height: 460px;
 	background-color: black;
 	border: 3px solid white;
-	box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.7);
+	animation-name: shadow;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
 	border-radius: 10px;
 	transition: 0.4s ease-out;
 	color: rgb(211, 211, 211);
+}
+
+@keyframes shadow {
+	10% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.637);
+	}
+
+	20% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.774);
+	}
+
+	30% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.884);
+	}
+
+	40% {
+		box-shadow: 4px 1px 19px  3px rgb(192, 24, 207);
+	}
+
+	50% {
+		box-shadow: 4px 1px 19px  3px rgb(220, 29, 238);
+	}
+
+	60% {
+		box-shadow: 4px 1px 19px  3px rgb(192, 24, 207);
+	}
+
+	70% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.884);
+	}
+
+	80% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.774);
+	}
+
+	90% {
+		box-shadow: 4px 1px 19px  3px rgba(192, 24, 207, 0.637);
+	}
+
+	100% {
+		box-shadow: 4px 1px 19px  3px rgba(234, 0, 255, 0.322);
+	}
 }
 
 .alonetr {
@@ -419,13 +459,14 @@ span {
 
 .trcard:hover {
 	transform: scale(1.06);
-	box-shadow: 0 12px 24px 0 white;
+	box-shadow: 4px 1px 19px  8px rgba(192, 24, 207, 0.637);
 }
 
 .trcard p {
 	color: rgb(212, 212, 212);
   	font-weight: 300;
 	padding: 6px 12px;
+	text-align: right;
 	border-bottom: 1px solid black;
 }
 
@@ -572,7 +613,7 @@ span {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
-	height: 700px;
+	height: 800px;
 }
 
 .project img {
@@ -584,7 +625,7 @@ span {
 
 .procard {
 	width: 30%;
-	height: 600px;
+	height: 700px;
 	background-color: #bfbfbf;
 	color: black;
 	transition: 0.2s ease;
@@ -606,9 +647,10 @@ span {
 
 .prohead {
 	padding: 10px 0;
-	font-size: 34px;
+	font-size: 30px;
 	border-bottom: 1px solid black;
 	text-align: center;
+	margin-top: -50px;
 	width: 100%;
 	background-color: #737373;
 }
@@ -713,31 +755,7 @@ span {
 	font-size: 40px; 
 }
 
-.music {
-	position: fixed;
-	opacity: 0.7;
-	width: 50px;
-	height: 50px;
-	border: 3px solid white;
-	border-radius: 12px;
-	background-color: white;
-	display: block;
-	z-index: 1;
-	right: 30px;
-	bottom: 30px;
-	outline: none;
-	font-size: 20px;
-	text-align: center;
-	transition: all 0.2s ease;
-}
 
-.music:hover {
-	opacity: 1;
-}
-
-.music:active {
-	opacity: 0.5;
-}
 
 footer {
 	width: 100%;
@@ -840,15 +858,13 @@ footer {
 	}
 }
 
-@media screen and (max-width:420px), (max-width: 600px) {
+@media screen and (max-width: 420px), (max-width: 600px) {
 
 	.container {
 		position: relative;
-		max-width: 480px;
+		width: 100%;
 		height: 480px;
-		background-image: url('face 2.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
+		
 	}
 
 	.opening {
@@ -870,9 +886,7 @@ footer {
 		
 	}
 
-	.music {
-		top: 20px;
-	}
+
 
 	.logonav {
 		visibility: hidden;
@@ -935,7 +949,7 @@ footer {
 	}
 
 	.logo {
-		visibility: hidden;
+		display: none;
 	}
 
 	.skillbox {
@@ -1006,12 +1020,12 @@ footer {
 		align-items: center;
 		flex-wrap: wrap;
 		width: 100%;
-		height: 2000px;
+		height: 2300px;
 	}
 
 	.procard {
 		width: 80%;
-		height: 600px;
+		height: 700px;
 	}
 
 	#videos {
@@ -1035,7 +1049,7 @@ footer {
 	}
 
 	.contacts {
-		left: 40px;
+		left: 20px;
 	}
 
 	.special {
@@ -1052,11 +1066,18 @@ footer {
 
 	.transformcard {
 		width: 100%;
-		height: 2000px;
+		height: 2200px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		border: none;
+		margin-left: 10px;
+	}
+	
+	.trcard {
+	    height: 500px;
+	    text-align: right;
 	}
 
 	.trcard:hover  {
@@ -1069,27 +1090,40 @@ footer {
 	}
 
 	.specard {
-		width: 400px;
+		max-width: 320px;
 		height: 600px;
 	}
 
 	.specard img {
-		width: 100%;
+		width: 320px;
 		height: auto;
 	}
 
 	.specard p {
 		font-size: 17px;
+		text-align: right;
 	}
 
 	.alone {
-		width: 400px;
+		max-width: 320px;
 	}
+	
+	.alone a {
+	    padding: 16px 32px;
+	    font-size: 16px;
+    }
+
+.alone h5 {
+	padding: 20px 40px;
+	font-size: 16px;
+	
+}
 
 	footer {
 		position: relative;
 		bottom: 100px;
 		justify-content: space-between;
+		width: 100%;
 	}
 
 	.footicons a {
