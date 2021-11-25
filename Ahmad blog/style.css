@@ -93,7 +93,8 @@ body {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111;
+	background-color: rgba(240, 240, 240, 0.1);
+	backdrop-filter: blur(20px);
 	overflow-x: hidden;
 	padding-top: 60px;
 	transition: 0.5s;
@@ -103,13 +104,13 @@ body {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
-	color: #818181;
+	color: white;
 	display: block;
 	transition: 0.3s;
 }
 
 .sidenav a:hover {
-	color: #f1f1f1;
+	color: #a1a1a1;
 }
 
 .sidenav .closebtn {
@@ -150,11 +151,11 @@ body {
 	}
 }
 
-@media screen and (min-width:900px) {
+/*@media screen and (min-width:900px) {
 	.opening {
-		visibility: hidden;
+		visibility: visible;
 	}
-}
+}*/
 
 .about {
 	display: flex;
@@ -307,21 +308,21 @@ span {
 .specard {
 	width: 500px;
 	height: 770px;
-	background-color: black;
-	border: 3px solid white;
+	background-color: rgba(240, 240, 240, 0.1);
+	backdrop-filter: blur(20px);
 	box-shadow: 4px 1px 19px 6px rgba(192, 24, 207, 0.637);
-	border-radius: 10px;
-	color: white;
+	border-radius: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 .specard img {
 	width: 100%;
 	height: auto;
-	border-radius: 10px 10px 0 0;
+	border-radius: 20px 20px 0 0;
 }
 
 .specard p {
@@ -330,7 +331,6 @@ span {
 	font-size: 20px;
 	height: 150px;
 	box-sizing: border-box;
-	border-bottom: 1px solid black;
 	text-align: right;	
 }
 
@@ -391,6 +391,60 @@ span {
 	border-left: 2px solid #737373;
 }
 
+.b1 {
+	width: 100px;
+	height: 100px;
+	filter: blur(70px);
+	border-radius: 50% 0 0 0 ;
+	background-color: #b10a95;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.b2 {
+	width: 140px;
+	height: 140px;
+	filter: blur(70px);
+	border-radius: 0 50% 0 0 ;
+	background-color: #eb3e3e;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.b3 {
+	width: 200px;
+	height: 240px;
+	filter: blur(70px);
+	border-radius: 50% 0 0 0 ;
+	background-color: #eb3e3e;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.b4 {
+	width: 140px;
+	height: 140px;
+	filter: blur(70px);
+	border-radius: 0 50% 0 0 ;
+	background-color: #e53eeb;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
 .trcard {
 	display: flex;
 	justify-content: space-between;
@@ -398,14 +452,15 @@ span {
 	flex-direction: column;
 	width: 280px;
 	height: 460px;
-	background-color: black;
-	border: 3px solid white;
+	background-color: rgba(240, 240, 240, 0.1);
+	backdrop-filter: blur(20px);
 	animation-name: shadow;
-	animation-duration: 6s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
-	border-radius: 10px;
+	border-radius: 20px;
 	transition: 0.4s ease-out;
 	color: rgb(211, 211, 211);
+	overflow: hidden;
 }
 
 @keyframes shadow {
@@ -467,7 +522,7 @@ span {
   	font-weight: 300;
 	padding: 6px 12px;
 	text-align: right;
-	border-bottom: 1px solid black;
+	z-index: 1;
 }
 
 .trcard a {
@@ -498,7 +553,7 @@ span {
 .trcard img {
 	width: 100%;
 	height: auto;
-	border-radius: 10px 10px 0 0;
+	border-radius: 20px 20px 0 0;
 }
 
 
@@ -868,13 +923,13 @@ footer {
 	}
 
 	.opening {
-		visibility: hidden;
+		visibility: visible;
 	}
 
 	.box {
 		position: fixed;
 		bottom: 0;
-		visibility: visible;
+		visibility: hidden;
 		width: 100%;
 		border-radius: 20px;
 		display: flex;
